@@ -6,7 +6,7 @@ class AppDelegate
 
   def get_user
     # @see https://github.com/RestKit/RestKit/wiki/Tutorial-%3A-Introduction-to-RestKit
-    objectMapping = RKObjectMapping.mappingForClass(GithubUser.class)
+    objectMapping = RKObjectMapping.mappingForClass(GithubUser)
     objectMapping.mapKeyPath('login', toAttribute:'login')
     objectMapping.mapKeyPath('email', toAttribute:'email')
     objectMapping.mapKeyPath('name', toAttribute:'name')
